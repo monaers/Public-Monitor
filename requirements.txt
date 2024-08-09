@@ -1,0 +1,8 @@
+nltk==3.8.1
+requests
+moviepy==1.0.3
+transformers==4.39.3
+tqdm==4.66.1
+zhconv==1.4.3
+accelerate==0.29.1
+sentencepiece==0.1.96
