@@ -1,0 +1,16 @@
+bcrypt
+blinker
+ffmpeg-python
+flask
+fsspec
+future
+jieba
+markupsafe
+nltk
+psycopg2
+transformers
+tqdm
+pymysql
+requests
+
+
