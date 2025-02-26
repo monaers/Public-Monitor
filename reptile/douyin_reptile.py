@@ -6,8 +6,8 @@ import pymongo
 # 抖音开放平台API的URL
 SEARCH_URL = "https://open.douyin.com/video/search/"
 COMMENT_URL = "https://open.douyin.com/video/search/comment/list/"
-ACCESS_TOKEN = "act.3.8f2l-lH-0o767BjXLQqh9qeZ2wq63s65o-wAIb5SZVgYPwV-PoXo0Pa_7vASCve8y9FaW292vh-sGmMrm6qNayXVc-lbPRFh7HX1-O4Sdr4XHdbEODnwFo0K6o0YtRoDEZ3qWWznF43erQ_KK7_xHqiV9MJH51NXllW0kjUF8td7giIprtKUEKR-Vw0=_lq"
-OPENID = "_0008V0AJ7byTggKhSIIDIijSB5xLdEgMwP4"
+ACCESS_TOKEN = "act.3.mayEAWmTBK_tBt6E3tDveOvi3AzQMa2Hlo3JZA8uw1hQDyMETVFqmfxyHx_3Bn773Z5c0RrjoOAYTxROFxI8_xpFSzwk_eLri0S23hloGY7XokZeB_RvYy_mL5lf1cD6vtYgHpEahUjBfFngjkxCq1fdN2R3rTjDmrsQyHWAzKgEaxAMUHF3ssa1vW4=_hl"
+OPENID = "_000hmBDf8FoQiVNfV43_DkxkpONzaJWHKmM"
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["mongo"]
 def search_videos(keyword):

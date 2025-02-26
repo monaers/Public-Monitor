@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL分析工具</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>URL分析工具</h1>
-    <form action="/page/analy" method="post">
-        <input type="text" name="url" value="value" placeholder="请输入URL" required>
-        <button type="submit">分析URL</button>
-    </form>
+    <div class="container">
+        <h1 class="main-title">视频舆情分析系统Demo</h1>
+        <h1 class="title">URL分析工具</h1>
+        <form action="/page/analy" method="post" class="url-form">
+            <input type="text" name="url" value="" placeholder="请输入URL" required>
+            <button type="submit">分析URL</button>
+        </form>
+    </div>
 </body>
 </html>

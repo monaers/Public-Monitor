@@ -15,4 +15,4 @@ def analy():
     summery = result['summary']
     sentiment = result['sentiment']
     classification = result['classification']
-    return render_template('analy.html',url=url,summery=summery,sentiiment=sentiment,classification=classification)
+    return render_template('analy.html',url=url,summery=summery,sentiment=sentiment,classification=classification)

@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL分析结果</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>URL分析结果</h1>
-    <p>URL: {{ url }}</p>
-    <h2>summery</h2>
-    <p>{{ summery }}</p>
-    <h2>sentiment</h2>
-    <p>{{ sentiment }}</p>
-    <h2>classification</h2>
-    <p>{{ classification }}</p>
+    <div class="container">
+        <h1 class="main-title">URL分析结果</h1>
+        <div class="result-content">
+            <h2><strong>URL:</strong> <span>{{ url }}</span></h2>
+            <h2>Summary</h2>
+            <p>{{ summery }}</p>
+            <h2>Sentiment</h2>
+            <p>{{ sentiment }}</p>
+            <h2>Classification</h2>
+            <p>{{ classification }}</p>
+        </div>
+    </div>
 </body>
 </html>

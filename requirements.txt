@@ -22,7 +22,6 @@ elasticsearch        ==      8.14.0
 ffmpeg-python        ==      0.2.0
 filelock             ==      3.15.4
 flask                ==      3.0.3
-frozenlist           ==      1.4.0
 fsspec               ==      2024.6.1
 future               ==      1.0.0
 greenlet             ==      3.0.3

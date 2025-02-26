@@ -18,11 +18,17 @@ from reptile.douyin_reptile import dy_reptile
 from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline, T5ForConditionalGeneration, T5Tokenizer, AutoTokenizer, AutoModelForSequenceClassification
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["mongo"]
+collection = db.dysummary
 model,t5_model, tokenizer, sentiment_model, sentiment_tokenizer,classification_model, classification_tokenizer,device= load_model()
 def wow(url):
     #video_url = "https://mirror.nyist.edu.cn/2.mp4"
     #outresult = dy_reptile()
     #video_url = outresult["url"]
+    #cursor = collection.find_one({"url": url})
+    #print(type(cursor))
+    #print(cursor)
+    #if (cursor):
+    #    print("summary:", cursor.get("summary"))
     video_url = url
     video_path = "video.mp4"
     audio_path = "audio.wav"
@@ -64,7 +70,10 @@ def wow(url):
     os.remove(video_path)
     os.remove(audio_path)
     result = {"summary":summary,"sentiment":sentiment_report,"classification":classification_result}
-    #db.dysummary.insert_one({"title":outresult["title"],"summary":summary,"sentiment":sentiment_report,"classification":classification_result,"url":video_url})
+    db.dysummary.insert_one({"summary":summary,"sentiment":sentiment_report,"classification":classification_result,"url":video_url})
+    print(db.dycomments.find({url: url}))
+
+    #db.dysummary.insert_one({"title":result["title"],"summary":summary,"sentiment":sentiment_report,"classification":classification_result,"url":video_url})
     print(result)
     return result
 
